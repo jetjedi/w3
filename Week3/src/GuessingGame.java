@@ -26,6 +26,8 @@ public class GuessingGame {
 			myGuess = input.nextInt(); //grab a new number
 		}
 		System.out.println("Winner Winner Chicken Dinner " + myGuess + " is correct!");
+		
+		input.close();
 
 	}
 
