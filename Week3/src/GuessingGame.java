@@ -11,11 +11,13 @@ public class GuessingGame {
 		if (num == 0)
 			num += 1;
 		
+		//so that I don't have to keep guessing and just test it.
 		System.out.println("Answer is: " + num);
 		
 		System.out.print("Guess a number between 1 and 1000: ");
 		int myGuess = input.nextInt();
 		
+		//loop to keep prompting for guess until myGuess == num.
 		while(myGuess != num) {
 			if (myGuess < num)
 				System.out.println("Too Low\n");
@@ -25,6 +27,7 @@ public class GuessingGame {
 			System.out.print("Guess a number between 1 and 1000: ");
 			myGuess = input.nextInt(); //grab a new number
 		}
+		//Notify player number was guessed correctly
 		System.out.println("Winner Winner Chicken Dinner " + myGuess + " is correct!");
 		
 		input.close();
